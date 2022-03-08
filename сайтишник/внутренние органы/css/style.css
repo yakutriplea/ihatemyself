@@ -1,0 +1,294 @@
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden	
+ }
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+  }
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+ }
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.back{
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative
+}
+.sec{
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+
+#mouse{
+	display: block;
+	width: 30px;
+	height: 50px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	z-index: 100;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#mouse:after,
+#mouse:before{
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	height:10px;
+	width:10px;
+	border:2px solid #000;
+	-webkit-transform: translate(-50%, -100%) rotate(45deg);
+	-moz-transform:(-50%, -100%) rotate(45deg);
+	-ms-transform:(-50%, -100%) rotate(45deg);
+	-o-transform:(-50%, -100%) rotate(45deg);
+	transform:(-50%, -100%) rotate(45deg);
+	border-top:transparent;
+	border-left:transparent;
+	animation:scrollDown 1.5s ease infinite; 
+}
+#mouse:after{
+	top:40%;
+	animation-delay: 0.4s;
+}
+@keyframes scrollDown{
+	0%{
+		opacity: 0;
+	}
+	30%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		top: 80%;
+	}
+}
+#pctr1{
+	display: block;
+	position:absolute;
+	bottom:2%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1;
+	width: 70%;
+	max-width:75%;
+}
+#pctr5{
+	display: block;
+	position:absolute;
+	bottom:4%;
+	left: 8%;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1;
+	width: 20%;
+	max-width:20%;
+}
+#pctr34{
+	display: block;
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1;
+	max-width:80%;
+}
+#text1{
+	display: block;
+	position:absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 2;
+	max-width:65%;
+}
+#box1{
+	display: block;
+	position:absolute;
+	top: 5%;
+	left: 1%;
+	z-index: 1;
+	max-height:90%; 
+	max-width:90%;
+}
+#box2{
+	display: block;
+	position:absolute;
+	top: 5%;
+	right: -5%;
+	z-index: 1;
+	max-height:90%; 
+	max-width:90%;
+}
+#text2{
+	display: block;
+	position:absolute;
+	top: 20%;
+	right: 12%;
+	z-index: 1;
+	max-height:70%; 
+}
+#poosh{
+	display: block;
+	position:absolute;
+	top: 9%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0 auto;
+	width: 40%;
+	max-height:70%; 
+	}
+#poosh1{
+	display: block;
+	position:absolute;
+	top: 9%;
+	right: 5%;
+	z-index: 1;
+	max-height:70%; 
+}
+#poosh2{
+	display: block;
+	position:absolute;
+	top: 9%;
+	left: 0;
+	z-index: 1;
+	max-height:70%; 
+}
+#poosh3{
+	display: block;
+	position:absolute;
+	top: 9%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0 auto;
+	max-height:70%; 
+}
+#poosh4{
+	display: block;
+	position:absolute;
+	top: 11%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: 0 auto;
+	}
+#poosh5{
+	display: block;
+	position:absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	width: 50%;
+	margin: 0 auto;
+	}
+#text3{
+	display: block;
+	position:absolute;
+	top: 23%;
+	left: 19%;
+	z-index: 1;
+	max-height:70%; 
+}
+#text5{
+	display: block;
+	position:absolute;
+	left: 25%;
+	z-index: 1;
+	max-height:70%; 
+}
+#card1{
+	display: block;
+	position:absolute;
+	top: 12%;
+	left:calc(50% - 600px);
+	z-index: 1;
+	max-height:40%; 
+	max-width:100%;
+	cursor: pointer;
+}
+#card2{
+	display: block;
+	position:absolute;
+	top: 12%;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 1;
+	max-height:40%; 
+	max-width:100%;
+	cursor: pointer;
+}
+#card3{
+	display: block;
+	position:absolute;
+	top: 12%;
+	right:calc(50% - 600px);
+	z-index: 1;
+	max-height:40%; 
+	max-width:100%;
+	cursor: pointer;
+}
+#clear{
+	display: block;
+	position:absolute;
+	bottom:20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1;
+	max-height:100%; 
+	max-width:70%;
+}
+#planet{
+	display: block;
+	position:absolute;
+	z-index: 1;
+	width: 1920px;
+	height: 1080px;
+	max-height:100%; 
+	max-width:100%;
+}
+#day{
+	display: block;
+	position:absolute;
+	z-index: 1;
+	width: 1920px;
+	height: 1080px;
+	max-height:100%; 
+	max-width:100%;
+}
+#text6{
+	display: block;
+	position:absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 2;
+	max-width:65%;
+}
